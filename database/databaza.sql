@@ -142,3 +142,92 @@ INSERT INTO `groups` (`group_id`, `group_name`, `latest_msg_time`) VALUES
 ('619fc828517c3', 'random', '2021-11-25 23:00:16'),
 ('61a1f13c14173', 'demodemo', '2021-11-27 14:20:04');
 
+
+CREATE TABLE `group_chats` (
+  `group_id` varchar(300) NOT NULL,
+  `user_id` int(150) NOT NULL,
+  `date_time` datetime NOT NULL,
+  `message` varchar(500) NOT NULL,
+  `message_id` int(200) NOT NULL,
+  `parent_message_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `group_chats`
+--
+
+INSERT INTO `group_chats` (`group_id`, `user_id`, `date_time`, `message`, `message_id`, `parent_message_id`) VALUES
+('61994890676c3', 26, '2021-11-21 02:32:17', 'Hii Kiku!!', 1, 0),
+('61994890676c3', 26, '2021-11-21 02:33:49', 'Hii Kiku!!', 2, 0),
+('61994890676c3', 26, '2021-11-21 02:40:34', 'learned new recipie', 3, 0),
+('61994890676c3', 26, '2021-11-21 02:41:26', 'learned new recipie', 4, 0),
+('61993d1862467', 26, '2021-11-21 02:41:50', 'student find integration hard!!', 5, 0),
+('61993d1862467', 26, '2021-11-21 02:43:33', 'student find integration hard!!', 6, 0),
+('61993d1862467', 26, '2021-11-21 02:43:48', 'what new?', 7, 0),
+('61993d1862467', 26, '2021-11-21 02:46:02', 'what new?', 8, 0),
+('61993d1862467', 26, '2021-11-21 02:46:16', 'lalalala', 9, 0),
+('61993cefeac75', 28, '2021-11-21 02:52:17', 'meena is back', 10, 0),
+('61993cefeac75', 28, '2021-11-21 02:52:57', 'lets celebrate', 11, 0),
+('61993cefeac75', 28, '2021-11-21 02:57:27', 'at 2pm', 12, 0),
+('61993cefeac75', 28, '2021-11-21 02:58:17', 'at dominoes!!', 13, 0),
+('61994890676c3', 28, '2021-11-21 02:58:56', 'yup - salads!!', 14, 0),
+('61994890676c3', 28, '2021-11-21 02:59:43', 'and sandwittch', 15, 0),
+('61993cefeac75', 28, '2021-11-21 02:59:59', 'whats say!!!', 16, 0),
+('61993bb026c3e', 28, '2021-11-21 03:00:17', 'Hey teachers!! how are the students doind??', 17, 0),
+('619ace02c5140', 27, '2021-11-22 04:24:25', 'do you want to add teacher here?', 18, 0),
+('619ace12d6590', 27, '2021-11-22 04:24:37', 'how is everyone?', 19, 0),
+('619ace02c5140', 29, '2021-11-22 04:25:34', 'we can - it will be easy to discuss!!', 20, 0),
+('619ace12d6590', 29, '2021-11-22 04:26:02', 'next week vocal exam!', 21, 0),
+('619ace12d6590', 35, '2021-11-22 16:24:00', 'its fast!', 22, 0),
+('619ace12d6590', 35, '2021-11-22 16:24:08', 'does anyone have notes?', 23, 0),
+('61993cefeac75', 26, '2021-11-23 15:22:59', 'Sure sounds fun!!', 24, 0),
+('619cbbec48d2f', 26, '2021-11-23 15:31:45', 'chk', 25, 0),
+('619ace02c5140', 27, '2021-11-23 15:35:29', 'what new?', 26, 0),
+('61994890676c3', 26, '2021-11-25 15:02:08', 'its student day . lets cook something tasty. Its a long message to test the layout. It has no meaning. css takes a lot of time and effort.', 27, 0),
+('61994890676c3', 28, '2021-11-25 15:51:54', 'again msg checking the layout writing a very very very long msg to see if this workssomething tasty. Its a long message to test the layout. It has no meaning. css takes a lot of time and effort.', 28, 0),
+('61994890676c3', 28, '2021-11-25 16:51:55', 'just check', 29, 0),
+('619969242cc86', 28, '2021-11-25 17:05:50', 'wanna?', 30, 0),
+('61994890676c3', 26, '2021-11-25 21:42:28', 'testing', 31, 0),
+('61994890676c3', 26, '2021-11-25 22:56:34', 'testing-43638756', 32, 0),
+('619cbbec48d2f', 26, '2021-11-25 22:56:44', 'micro', 33, 0),
+('619ace02c5140', 27, '2021-11-25 22:59:53', 'jfkd', 34, 0);
+
+REATE TABLE `group_users` (
+  `user_id` int(11) NOT NULL,
+  `group_id` varchar(150) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `group_users`
+--
+
+INSERT INTO `group_users` (`user_id`, `group_id`) VALUES
+(26, '61993bb026c3e'),
+(26, '61993cefeac75'),
+(26, '61993d1862467'),
+(28, '61993bb026c3e'),
+(28, '61993cefeac75'),
+(28, '61994890676c3'),
+(28, '61994fd025559'),
+(28, '61994fd4036f9'),
+(28, '61994fd76bb29'),
+(28, '61994fdaa6193'),
+(28, '61994fddc7f55'),
+(28, '61994febf31a5'),
+(28, '61994ff7859f8'),
+(28, '61995230736af'),
+(26, '61995bc82c326'),
+(26, '61994890676c3'),
+(28, '619969242cc86'),
+(27, '619ace02c5140'),
+(27, '619ace12d6590'),
+(29, '619ace02c5140'),
+(29, '619ace12d6590'),
+(35, '619ace12d6590'),
+(26, '619cbbec48d2f'),
+(26, '619fc728af7fb'),
+(27, '619fc828517c3'),
+(29, '619fc828517c3'),
+(27, '61a1f13c14173');
+
+
