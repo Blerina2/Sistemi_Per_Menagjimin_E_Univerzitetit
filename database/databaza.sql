@@ -117,3 +117,28 @@ INSERT INTO `files` (`classroom_code`, `uploaded_file_name`, `uploaded_file_size
 ('6197fa57769e0', NULL, NULL, '619f763f396fa', 'random', '', 0, '', '2021-11-27 00:00:00', '2021-11-25 17:10:47', ''),
 ('619fb2837f506', 'beak.png', 143821, '619fb2b092c3e', 'demo-1', '', 100, '', '2021-11-27 00:00:00', '2021-11-25 21:28:40', 'png'),
 ('6197fa57769e0', 'panther.jpg', 298003, '619fc67608409', 'demo test', '', 62, '', '2021-11-27 00:00:00', '2021-11-25 22:53:02', 'jpg');
+
+CREATE TABLE `groups` (
+  `group_id` varchar(150) NOT NULL,
+  `group_name` varchar(150) NOT NULL,
+  `latest_msg_time` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `groups`
+--
+
+INSERT INTO `groups` (`group_id`, `group_name`, `latest_msg_time`) VALUES
+('61993bb026c3e', 'Mohali Area', '2021-11-21 03:00:17'),
+('61993cefeac75', 'DAV School', '2021-11-23 15:22:59'),
+('61993d1862467', 'maths', '2021-11-21 02:46:16'),
+('61994890676c3', 'cooking-class', '2021-11-25 22:56:34'),
+('61995bc82c326', '61994890676c3', '2021-11-21 02:04:16'),
+('619969242cc86', 'dance lessons', '2021-11-25 17:05:50'),
+('619ace02c5140', 'evs-notes', '2021-11-25 22:59:53'),
+('619ace12d6590', 'music-classes', '2021-11-22 16:24:08'),
+('619cbbec48d2f', 'micro', '2021-11-25 22:56:44'),
+('619fc728af7fb', 'demo-test', '2021-11-25 22:56:00'),
+('619fc828517c3', 'random', '2021-11-25 23:00:16'),
+('61a1f13c14173', 'demodemo', '2021-11-27 14:20:04');
+
