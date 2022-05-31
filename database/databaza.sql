@@ -16,7 +16,7 @@ CREATE TABLE `classrooms` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `classrooms`
+-- `
 --
 
 INSERT INTO `classrooms` (`id`, `classroom_code`, `user_id`, `teacher_name`, `subject_name`, `subject_code`, `batch`, `section`, `room_number`) VALUES
@@ -41,7 +41,6 @@ CREATE TABLE `class_comments` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `class_comments`
 --
 
 INSERT INTO `class_comments` (`classroom_code`, `comment`, `user_id`, `date_time`) VALUES
@@ -125,7 +124,7 @@ CREATE TABLE `groups` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `groups`
+
 --
 
 INSERT INTO `groups` (`group_id`, `group_name`, `latest_msg_time`) VALUES
@@ -153,8 +152,7 @@ CREATE TABLE `group_chats` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `group_chats`
---
+
 
 INSERT INTO `group_chats` (`group_id`, `user_id`, `date_time`, `message`, `message_id`, `parent_message_id`) VALUES
 ('61994890676c3', 26, '2021-11-21 02:32:17', 'Hii Kiku!!', 1, 0),
@@ -198,7 +196,7 @@ REATE TABLE `group_users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `group_users`
+
 --
 
 INSERT INTO `group_users` (`user_id`, `group_id`) VALUES
@@ -241,9 +239,7 @@ CREATE TABLE `student_submission` (
   `marks` double NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `student_submission`
---
+
 
 INSERT INTO `student_submission` (`classroom_code`, `classwork_id`, `user_id`, `submission_file_id`, `submission_date`, `submission_file_name`, `submission_file_extension`, `marks`) VALUES
 ('6197fa57769e0', '6197fa97e9b56', 29, '6197fbd642d3c', '2021-11-20 01:02:38', 'Notes2019.pdf', 'pdf', 35),
@@ -265,8 +261,7 @@ REATE TABLE `time_table` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `time_table`
---
+
 
 INSERT INTO `time_table` (`user_id`, `day`, `start_time`, `end_time`, `task`) VALUES
 (26, 0, '04:43:00', '07:44:00', 'dad'),
@@ -282,8 +277,7 @@ INSERT INTO `time_table` (`user_id`, `day`, `start_time`, `end_time`, `task`) VA
 
 -- --------------------------------------------------------
 
---
--- Table structure for table `users`
+
 --
 
 CREATE TABLE `users` (
@@ -299,7 +293,7 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `users`
+
 --
 
 INSERT INTO `users` (`id`, `name`, `profession`, `email`, `phone_number`, `gender`, `vaccine_stat`, `password`, `image_extension`) VALUES
@@ -317,11 +311,7 @@ INSERT INTO `users` (`id`, `name`, `profession`, `email`, `phone_number`, `gende
 (46, 'bvjz', 'teacher', 'cgh@gmail.com', '', '', '', '$2y$10$4Pmm27qf5xDR5ifX3KrNT.6u2zqQgdC2CivrDofn15L9E1TRFsi66', '');
 
 --
--- Indexes for dumped tables
 --
-
---
--- Indexes for table `classrooms`
 --
 ALTER TABLE `classrooms`
   ADD PRIMARY KEY (`id`);
@@ -358,17 +348,13 @@ ALTER TABLE `users`
   ADD UNIQUE KEY `email` (`email`);
 
 --
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `classrooms`
+-`
 --
 ALTER TABLE `classrooms`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
--- AUTO_INCREMENT for table `group_chats`
+
 --
 ALTER TABLE `group_chats`
   MODIFY `message_id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
@@ -380,17 +366,15 @@ ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
--- Constraints for dumped tables
+--
 --
 
---
--- Constraints for table `class_student`
+
 --
 ALTER TABLE `class_student`
   ADD CONSTRAINT `class_student_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `time_table`
 --
 ALTER TABLE `time_table`
   ADD CONSTRAINT `time_table_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
