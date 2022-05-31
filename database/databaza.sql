@@ -230,4 +230,27 @@ INSERT INTO `group_users` (`user_id`, `group_id`) VALUES
 (29, '619fc828517c3'),
 (27, '61a1f13c14173');
 
+CREATE TABLE `student_submission` (
+  `classroom_code` varchar(150) NOT NULL,
+  `classwork_id` varchar(255) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `submission_file_id` varchar(300) NOT NULL,
+  `submission_date` datetime NOT NULL,
+  `submission_file_name` varchar(300) NOT NULL,
+  `submission_file_extension` varchar(300) NOT NULL,
+  `marks` double NOT NULL DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `student_submission`
+--
+
+INSERT INTO `student_submission` (`classroom_code`, `classwork_id`, `user_id`, `submission_file_id`, `submission_date`, `submission_file_name`, `submission_file_extension`, `marks`) VALUES
+('6197fa57769e0', '6197fa97e9b56', 29, '6197fbd642d3c', '2021-11-20 01:02:38', 'Notes2019.pdf', 'pdf', 35),
+('6197fa57769e0', '6197faf388fb5', 29, '6197fbecaabd9', '2021-11-20 01:03:00', 'notes.pdf', 'pdf', 18),
+('6197fa57769e0', '6197faf388fb5', 34, '6197fe4e33a20', '2021-11-20 01:13:10', '1 env problems cause.pptx', 'pptx', 22),
+('6197fa57769e0', '6197fa97e9b56', 34, '6197fe5ba0d8f', '2021-11-20 01:13:23', '3 soil conservation.ppt', 'ppt', 33),
+('6197fa57769e0', '6197faf388fb5', 27, '6197ff46e864c', '2021-11-20 01:17:18', 'nith_btech_scheme_syllabus_Aug2015.pdf', 'pdf', 15),
+('6197fa57769e0', '6197fa97e9b56', 27, '6197ff51317ac', '2021-11-20 01:17:29', 'Software Development Business Plan by Slidesgo.pptx', 'pptx', 9.05),
+('6197fa57769e0', '619fc67608409', 27, '619fc7d14f193', '2021-11-25 22:58:49', 's1.jpg', 'jpg', 55);
 
