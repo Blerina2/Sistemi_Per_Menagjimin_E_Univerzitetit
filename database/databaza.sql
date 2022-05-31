@@ -63,3 +63,10 @@ INSERT INTO `class_comments` (`classroom_code`, `comment`, `user_id`, `date_time
 ('6197fa57769e0', 'postt', 27, '2021-11-25 22:58:16');
 
 
+
+CREATE TABLE `class_student` (
+  `classroom_code` varchar(150) NOT NULL,
+  `user_id` int(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
