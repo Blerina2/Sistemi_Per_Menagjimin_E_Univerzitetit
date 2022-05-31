@@ -33,5 +33,33 @@ INSERT INTO `classrooms` (`id`, `classroom_code`, `user_id`, `teacher_name`, `su
 (23, '619fb2837f506', 42, 'demo', 'demo-1', 'fjdlks', '', '', ''),
 (24, '619fc63bd1642', 26, 'Shiv Kumar', 'demodemo', 'gsdg', '', '', '');
 
+CREATE TABLE `class_comments` (
+  `classroom_code` varchar(150) NOT NULL,
+  `comment` varchar(255) NOT NULL,
+  `user_id` int(255) NOT NULL,
+  `date_time` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `class_comments`
+--
+
+INSERT INTO `class_comments` (`classroom_code`, `comment`, `user_id`, `date_time`) VALUES
+('6197fa57769e0', 'Hello Students !!', 26, '2021-11-20 00:56:26'),
+('6197fa57769e0', 'Welcome to EVS!', 26, '2021-11-20 00:56:36'),
+('6197fa57769e0', 'Excited to learn!', 27, '2021-11-20 01:00:27'),
+('6197f90f6a212', 'OOPS is easy!!', 27, '2021-11-20 01:00:51'),
+('6197f8dd5c3e7', 'what is the syllabus?', 27, '2021-11-20 01:01:00'),
+('6197f8dd5c3e7', 'what is the syllabus?', 27, '2021-11-20 01:01:01'),
+('6197f00d7c5b5', 'how is it different from maths-1', 27, '2021-11-20 01:01:20'),
+('6197fa57769e0', 'will there be practicals?', 29, '2021-11-20 01:01:56'),
+('6197f054c1abd', 'Is this video-editing course?', 29, '2021-11-20 01:04:23'),
+('6197fa57769e0', 'I think yes, from 7th', 34, '2021-11-20 01:12:43'),
+('6197f90f6a212', 'Hey everyone!!', 34, '2021-11-20 01:13:44'),
+('6197f02b5fac5', 'Dont burn yourselves.', 26, '2021-11-20 17:16:10'),
+('6197fa57769e0', 'what is the syllabus?', 35, '2021-11-22 16:19:43'),
+('6197fa57769e0', 'testing', 26, '2021-11-25 21:31:28'),
+('6197fa57769e0', 'test tmr', 26, '2021-11-25 22:52:23'),
+('6197fa57769e0', 'postt', 27, '2021-11-25 22:58:16');
 
 
