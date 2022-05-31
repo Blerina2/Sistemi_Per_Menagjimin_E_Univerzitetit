@@ -1,1 +1,15 @@
 
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.bottom-aligned {
+    margin: auto 0px 0px;
+}
+
+.left-container {
+    margin-left: 200px;
+    padding: 2%;
+}
