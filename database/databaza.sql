@@ -254,3 +254,144 @@ INSERT INTO `student_submission` (`classroom_code`, `classwork_id`, `user_id`, `
 ('6197fa57769e0', '6197fa97e9b56', 27, '6197ff51317ac', '2021-11-20 01:17:29', 'Software Development Business Plan by Slidesgo.pptx', 'pptx', 9.05),
 ('6197fa57769e0', '619fc67608409', 27, '619fc7d14f193', '2021-11-25 22:58:49', 's1.jpg', 'jpg', 55);
 
+
+
+REATE TABLE `time_table` (
+  `user_id` int(11) NOT NULL,
+  `day` int(11) NOT NULL,
+  `start_time` time NOT NULL,
+  `end_time` time NOT NULL,
+  `task` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `time_table`
+--
+
+INSERT INTO `time_table` (`user_id`, `day`, `start_time`, `end_time`, `task`) VALUES
+(26, 0, '04:43:00', '07:44:00', 'dad'),
+(26, 3, '04:49:00', '07:51:00', 'dance class'),
+(26, 3, '15:49:00', '18:50:00', 'music class'),
+(27, 0, '08:33:00', '09:42:00', 'math class'),
+(26, 0, '15:02:00', '16:00:00', 'student ama'),
+(29, 1, '07:35:00', '09:37:00', 'Morning Basketball'),
+(26, 1, '15:30:00', '16:30:00', 'ama'),
+(26, 3, '11:41:00', '12:41:00', 'evs class'),
+(26, 3, '17:11:00', '18:11:00', 'ajay lecture'),
+(26, 3, '22:55:00', '23:55:00', 'demo-test');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `profession` varchar(50) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `phone_number` varchar(100) NOT NULL,
+  `gender` varchar(10) NOT NULL,
+  `vaccine_stat` varchar(30) NOT NULL,
+  `password` varchar(300) NOT NULL,
+  `image_extension` varchar(150) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `name`, `profession`, `email`, `phone_number`, `gender`, `vaccine_stat`, `password`, `image_extension`) VALUES
+(26, 'Shiv ', 'teacher', 'shiv@gmail.com', '45346', 'male', 'full-vaccine', '$2y$10$ayr1c85pwBNUBLlntiDB7uQ3/1UdcJGy1x.Upg0EP7SswzwgbxwQy', 'png'),
+(27, 'Ram ', 'student', 'ram@gmail.com', '43656', 'male', 'not-vaccine', '$2y$10$byA9k/Ttr9AlC.ibobuJPOkyRP3iF..Oek4jjjuM/2U5.4oGKfPzG', 'jpg'),
+(28, 'Kiku', 'teacher', 'kiku@gmail.com', '456763', 'female', 'full-vaccine', '$2y$10$8Mws4ebqFU7Rj2zA8XiOr.M.6PX4paQyi6cBaaRPkLCg3MRglNnIm', 'jpg'),
+(29, 'Muskaan Sharma', 'student', 'musk@gmail.com', '', 'female', 'partial-vaccine', '$2y$10$foRdnHnkIzUHypunRrqBRuNZJl.FfIDTgCKmcAoFsHhQ.WrMuCLOq', 'jpg'),
+(34, 'Sheera', 'student', 'sheera@gmail.com', '453867', 'female', 'full-vaccine', '$2y$10$1ov6I.zLThYHw81fycl/kuP/.8X0vHz8qMMwHr2FPHvaAxK5d/Zki', 'jpg'),
+(35, 'Chinki', 'student', 'chinki@gmail.com', '', 'male', 'partial-vaccine', '$2y$10$LJ2FbQnyeH0bRZX8hCXhp.HF1.aoWIy5hxFMY1Y/AXsvkPrL/rpa2', ''),
+(37, 'bheem', 'student', 'bheem@gmail.com', '4576232', '', '', '$2y$10$cHWvsZYtijBUuSYRM6rGS.2M5K8Hr58z4Vue8QIT9.BtGqmAYTWfy', 'png'),
+(38, 'gandhi', 'teacher', 'gandhi@gmail.com', '123456', '', 'full-vaccine', '$2y$10$hyk9R6ArhrnoXkSW0gLauOo.kKWJF65CNpq0gITs5EkYA0nk5C7nG', ''),
+(39, 'raju', 'student', 'raju@gmail.com', '', 'male', 'partial-vaccine', '$2y$10$DsbCPwYMXEgREs.FSmWiWOkRWhmjvtkLUMTqVeAEIg.pqYZpNTE4G', ''),
+(40, 'Sapna', 'teacher', 'sapna@gmail.com', '', 'female', '', '$2y$10$bL.Cy43JGYbQmGYERDXOVOPiclisCLzYOMryB61YW6gnmiP9b..3S', 'png'),
+(42, 'demo', 'teacher', 'demo@gmail.com', '', '', '', '$2y$10$e6/8xkYWgeJHuGVnxKmOmOnzj92dLi.KvCzw7pbi9Gjr36Ks3UxWO', ''),
+(46, 'bvjz', 'teacher', 'cgh@gmail.com', '', '', '', '$2y$10$4Pmm27qf5xDR5ifX3KrNT.6u2zqQgdC2CivrDofn15L9E1TRFsi66', '');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `classrooms`
+--
+ALTER TABLE `classrooms`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `class_student`
+--
+ALTER TABLE `class_student`
+  ADD KEY `user_id` (`user_id`);
+
+--
+-- Indexes for table `groups`
+--
+ALTER TABLE `groups`
+  ADD PRIMARY KEY (`group_id`);
+
+--
+-- Indexes for table `group_chats`
+--
+ALTER TABLE `group_chats`
+  ADD PRIMARY KEY (`message_id`);
+
+--
+-- Indexes for table `time_table`
+--
+ALTER TABLE `time_table`
+  ADD KEY `user_id` (`user_id`);
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `email` (`email`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `classrooms`
+--
+ALTER TABLE `classrooms`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+
+--
+-- AUTO_INCREMENT for table `group_chats`
+--
+ALTER TABLE `group_chats`
+  MODIFY `message_id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `class_student`
+--
+ALTER TABLE `class_student`
+  ADD CONSTRAINT `class_student_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `time_table`
+--
+ALTER TABLE `time_table`
+  ADD CONSTRAINT `time_table_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
+COMMIT;
