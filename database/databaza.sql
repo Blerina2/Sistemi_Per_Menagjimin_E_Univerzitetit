@@ -70,3 +70,19 @@ CREATE TABLE `class_student` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
+INSERT INTO `class_student` (`classroom_code`, `user_id`) VALUES
+('6197f054c1abd', 29),
+('6197f8f60162d', 29),
+('6197fa57769e0', 27),
+('6197fa57769e0', 27),
+('6197f90f6a212', 27),
+('6197f8dd5c3e7', 27),
+('6197f00d7c5b5', 27),
+('6197fa57769e0', 29),
+('6197f00d7c5b5', 29),
+('6197f00d7c5b5', 34),
+('6197fa57769e0', 34),
+('6197f90f6a212', 34),
+('6197fa57769e0', 35),
+('6197f00d7c5b5', 35),
+('619fc63bd1642', 27);
