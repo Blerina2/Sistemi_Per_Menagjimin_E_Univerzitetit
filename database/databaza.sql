@@ -86,3 +86,34 @@ INSERT INTO `class_student` (`classroom_code`, `user_id`) VALUES
 ('6197fa57769e0', 35),
 ('6197f00d7c5b5', 35),
 ('619fc63bd1642', 27);
+
+
+CREATE TABLE `files` (
+  `classroom_code` varchar(150) NOT NULL,
+  `uploaded_file_name` varchar(255) DEFAULT NULL,
+  `uploaded_file_size` bigint(255) DEFAULT NULL,
+  `file_id` varchar(255) NOT NULL,
+  `classwork_title` varchar(255) NOT NULL,
+  `classwork_inst` varchar(300) DEFAULT NULL,
+  `classwork_marks` int(255) DEFAULT NULL,
+  `classwork_topic` varchar(255) DEFAULT NULL,
+  `due_date` datetime DEFAULT NULL,
+  `create_date` datetime NOT NULL,
+  `file_extension` varchar(150) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+`
+--
+
+INSERT INTO `files` (`classroom_code`, `uploaded_file_name`, `uploaded_file_size`, `file_id`, `classwork_title`, `classwork_inst`, `classwork_marks`, `classwork_topic`, `due_date`, `create_date`, `file_extension`) VALUES
+('6197fa57769e0', 'AMex data.pdf', 73465, '6197fa97e9b56', 'Seeds', 'no cheating!!', 50, 'garden', '2021-12-01 00:00:00', '2021-11-20 00:57:19', 'pdf'),
+('6197fa57769e0', NULL, NULL, '6197faf388fb5', 'Renewable sources - no file', '30 min time limit. \r\nOpen book.', 50, 'fuels', '2021-12-21 00:00:00', '2021-11-20 00:58:51', ''),
+('6197f00d7c5b5', 'toc1.png', 369839, '6197ff014bd9f', 'Differential Integration', '', 150, 'maths', '2021-12-31 00:00:00', '2021-11-20 01:16:09', 'png'),
+('6197f00d7c5b5', 'Project_Charter_Template.docx', 44074, '6197ff2783b71', 'Addition', '', 10, 'elementary', '2021-12-21 00:00:00', '2021-11-20 01:16:47', 'docx'),
+('6197f02b5fac5', 'Project-Proposal-Template.docx', 233132, '6198e07f71d8a', 'Khana Khazana', '', 0, '', '0000-00-00 00:00:00', '2021-11-20 17:18:15', 'docx'),
+('6197f8f60162d', NULL, NULL, '619be733b0c34', 'class-test', '', 50, '', '2021-12-19 00:00:00', '2021-11-23 00:23:39', ''),
+('6197fa57769e0', NULL, NULL, '619cc0779caf2', 'test', 'plagiarism test set', 0, '', '2021-11-26 00:00:00', '2021-11-23 15:50:39', ''),
+('6197fa57769e0', NULL, NULL, '619f763f396fa', 'random', '', 0, '', '2021-11-27 00:00:00', '2021-11-25 17:10:47', ''),
+('619fb2837f506', 'beak.png', 143821, '619fb2b092c3e', 'demo-1', '', 100, '', '2021-11-27 00:00:00', '2021-11-25 21:28:40', 'png'),
+('6197fa57769e0', 'panther.jpg', 298003, '619fc67608409', 'demo test', '', 62, '', '2021-11-27 00:00:00', '2021-11-25 22:53:02', 'jpg');
