@@ -189,7 +189,7 @@
         
         
         </div>
-    <!-- Meeet our creator Section -->
+    
     <div class="ui center aligned container">
         <div class="section-header">
             <div class=" ui huge header">
