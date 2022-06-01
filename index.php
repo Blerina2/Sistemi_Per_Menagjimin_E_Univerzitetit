@@ -109,3 +109,23 @@
                         <p>Krijoni dhe shikoni orarin tuaj javor duke shtuar detyra gjatë ditës.</p>
                     </div>
                 </div>
+                
+                </a>
+            <a class="teal card">
+                <div class="content">
+                    <div class="ui teal large header">
+                        Grupet e Studimit
+                    </div>
+                    <div class="ui divider"></div>
+                    <div class="description">
+                        <p>Veçori e veçantë për studentët që të diskutojnë një klasë dhe të ndajnë shënime. Krijoni dhe bashkohuni me lehtësi grupet e studimit me shokët dhe miqtë tuaj të klasës.</p>                    </div>
+                </div>
+            </a><a class="teal card">
+                <div class="content">
+                    <div class="ui teal large header">
+                        Dhomat e Stafit
+                    </div>
+                    <div class="ui divider"></div>
+                    <div class="description">
+                        <p>Veçori e veçantë për mësuesit për të krijuar dhe bashkuar grupe dhe për të diskutuar dhe ndarë informacione me mësues të tjerë. </p>                    </div>
+                </div>
