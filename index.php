@@ -56,3 +56,24 @@
             </div>
         </div>
     </div>
+    
+    <div class="ui center aligned container">
+        <div class="section-header">
+            <div class="ui huge header">
+                Pse me perdorë ABS?
+                <div class="sub header">
+                    Sepse është e mrekullueshme.
+                </div>
+            </div>
+        </div>
+        <div class="ui three raised cards">
+            <a class="teal card">
+                <div class="content">
+                    <div class="ui teal large header">
+                        Krijimi i klasës
+                    </div>
+                    <div class="ui divider"></div>
+                    <div class="description">
+                        <p>Krijoni shpejt dhe bashkojuni klasave me një kod unik të krijuar automatikisht, qoftë për shkollën, universitetet apo shkollimin tuaj privat.</p>
+                    </div>
+                </div>
