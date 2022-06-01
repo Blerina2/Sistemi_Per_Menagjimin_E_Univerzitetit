@@ -175,3 +175,14 @@
                 A është ABS free?
             </div>
         </div>
+
+        <div class="ui teal segment">
+            <div class="ui header">
+                A përdorët ABS vetem për shkolla dhe universitete apo mund të përdoren për mësime private?
+            </div>
+        </div>
+        <div class="ui teal segment">
+            <div class="ui header">
+                A mund të përdori ABS në telefonin tim?
+            </div>
+        </div>
