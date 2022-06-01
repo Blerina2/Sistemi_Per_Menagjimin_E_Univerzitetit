@@ -77,3 +77,35 @@
                         <p>Krijoni shpejt dhe bashkojuni klasave me një kod unik të krijuar automatikisht, qoftë për shkollën, universitetet apo shkollimin tuaj privat.</p>
                     </div>
                 </div>
+                
+                </a>
+            <a class="teal card">
+                <div class="content">
+                    <div class="ui teal large header">
+                        Dorëzimi i lehtë i detyrës
+                    </div>
+                    <div class="ui divider"></div>
+                    <div class="description">
+                        <p>Ndërfaqe e lehtë për krijimin e shpejtë të detyrave nga mësuesi dhe dorëzimin nga studentët.</p>
+                    </div>
+                </div>
+            </a><a class="teal card">
+                <div class="content">
+                    <div class="ui teal large header">
+                        Sistemi i integruar i notimit
+                    </div>
+                    <div class="ui divider"></div>
+                    <div class="description">
+                        <p>Një sistem i lehtë vlerësimi i disponueshëm së bashku me detyrat e paraqitura me një sistem të integruar të llogaritjes së përqindjes.</p>                    </div>
+                </div>
+            </a>
+            <a class="teal card">
+                <div class="content">
+                    <div class="ui teal large header">
+                        Tabelat javore-kohore
+                    </div>
+                    <div class="ui divider"></div>
+                    <div class="description">
+                        <p>Krijoni dhe shikoni orarin tuaj javor duke shtuar detyra gjatë ditës.</p>
+                    </div>
+                </div>
