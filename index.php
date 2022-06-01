@@ -151,3 +151,27 @@
                     <div class="description">
                         <p>Një ndërfaqe e lehtë për t'u naviguar dhe e pastër dhe miqësore për përdoruesit, për t'u përdorur nga kushdo.</p>                    </div>
                 </div>
+                
+                
+                </a>
+        </div>
+    </div>
+    <!-- FAQ's Section -->
+    <div class="ui center aligned container">
+        <div class="section-header">
+            <div class=" ui huge header">
+                Pyetjet
+            </div>
+        </div>
+    </div>
+    <div class="ui container">
+        <div class="ui teal segment">
+            <div class="ui header">
+                Çfarë është ABS?
+            </div>
+        </div>
+        <div class="ui teal segment">
+            <div class="ui header">
+                A është ABS free?
+            </div>
+        </div>
