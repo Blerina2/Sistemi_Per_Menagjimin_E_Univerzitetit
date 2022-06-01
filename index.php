@@ -129,3 +129,25 @@
                     <div class="description">
                         <p>Veçori e veçantë për mësuesit për të krijuar dhe bashkuar grupe dhe për të diskutuar dhe ndarë informacione me mësues të tjerë. </p>                    </div>
                 </div>
+            
+            
+            </a>
+            <a class="teal card">
+                <div class="content">
+                    <div class="ui teal large header">
+                        Statusi i vaksinimit
+                    </div>
+                    <div class="ui divider"></div>
+                    <div class="description">
+                        <p>Njihni statusin e vaksinimit kundër COVID të të gjithë miqve dhe nxënësve tuaj në një klasë të caktuar.</p>                    </div>
+                </div>
+            </a>
+            <a class="teal card">
+                <div class="content">
+                    <div class="ui teal large header">
+                        Clean and neat UI
+                    </div>
+                    <div class="ui divider"></div>
+                    <div class="description">
+                        <p>Një ndërfaqe e lehtë për t'u naviguar dhe e pastër dhe miqësore për përdoruesit, për t'u përdorur nga kushdo.</p>                    </div>
+                </div>
