@@ -48,3 +48,11 @@
                     <div class="ui small grey header">
                         Sekreti i suksesit është të bësh gjërat e zakonshme jashtëzakonisht mirë.
                     </div>
+                    
+                    </div>
+                <div class="seven wide column">
+                    <img class="ui medium centered image" src="images/panda.png">
+                </div>
+            </div>
+        </div>
+    </div>
