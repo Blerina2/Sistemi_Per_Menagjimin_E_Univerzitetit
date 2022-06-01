@@ -186,3 +186,64 @@
                 A mund të përdori ABS në telefonin tim?
             </div>
         </div>
+        
+        
+        </div>
+    <!-- Meeet our creator Section -->
+    <div class="ui center aligned container">
+        <div class="section-header">
+            <div class=" ui huge header">
+                Takoni Krijuesit Tanë
+            </div>
+        </div>
+    </div>
+    <div class="ui container">
+        <div class="ui grid">
+            <div class="row">
+                <div class="four wide column">
+                    <img class="ui tiny circular centered image" src="images/Na.png" style="width: 150%">
+                </div>
+                <div class="twelve wide column">
+                    <div class="ui header">
+                        <pre>
+                        Albulena Makolli
+                        Arbresha Stublla
+                        Blerina Beka
+                        Blerta Ujkani
+                        Sumeja Veseli
+                        </pre>
+                        <div class="sub header">
+                            Second year in Faculty of Electrical and Computer Engineering, Kosovo.
+                        </div>
+                    </div>
+                    <div class="ui small star rating"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <br><br>
+    <!-- Footer -->
+    <div class="ui fluid center aligned container placeholder segment">
+        <div class="ui header">
+            <div class="sub header">
+                <h1>
+                    <a><i class="facebook icon"></i></a>
+                    <a><i class="instagram icon"></i></a>
+                    <a><i class="twitter square icon"></i></a>
+                </h1>
+            </div>
+            Info . Support . Marketting
+            <div class="sub header">
+                Terms of Use . Privacy Policy<br><br>
+                <i class="copyright icon"></i>
+               2022 Fiek
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+        
